@@ -10,7 +10,9 @@ const LoginPage = () => {
                 <input className={modules.inputBox} placeholder="Логин" />
                 <input className={modules.inputBox} placeholder="Пароль" type="password"/>
                 <button className={modules.buttonBox}>Войти</button>
-                <span>Нет учётной записи? <a href=''>Регистрация</a></span>
+                <span>Нет учётной записи?
+                    <a href=''>Регистрация</a>
+                </span>
             </div>
         </div>
     )
