@@ -1,44 +1,58 @@
 .backGroundLogin {
     background-size: 100%;
     background-color: #e7e7e7;
+    height: 100vh;
+    overflow-y: scroll;
+
+    .loginWrapper {
+        width: 30%;
+    
+        background-color: #bababa;
+        margin: auto;
+        padding: 10px;
+        display: grid;
+    
+        justify-content: center;
+        margin-top: 15%;
+    
+        border-radius: 20px;
+
+        .headerLabel {
+            color: black;
+            text-align: center;
+        }
+        
+        .inputBox {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        
+            padding: 10px;
+        
+            border-radius: 15px;
+            border: 0;
+
+            outline: none;
+        }
+        
+        .buttonBox {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 10px;
+        
+            border-radius: 15px;
+            border: 0;
+
+            background-color: #e1e1e1;
+
+            cursor: pointer;
+
+            &:active {
+                background-color: #717171;
+            }
+        }
+
+    }
 }
 
-.loginWrapper {
-    height: 50%;
-    width: 30%;
 
-    background-color: #bababa;
-    margin: auto;
-    padding: 10px;
-    display: grid;
 
-    justify-content: center;
-
-    border-radius: 20px;
-}
-
-.headerLabel {
-    color: black;
-    text-align: center;
-}
-
-.inputBox {
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-    padding: 10px;
-
-    border-radius: 15px;
-    border: 0
-}
-
-.buttonBox {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 10px;
-
-    border-radius: 15px;
-    border: 0;
-
-    background-color: #e7e7e7;
-}
