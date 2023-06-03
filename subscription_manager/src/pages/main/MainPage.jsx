@@ -7,6 +7,10 @@ const MainPage = () => {
         {value:"Boosty", label: "Boosty"},
         {value:"Twitch", label: "Twitch"}
     ]
+
+    const listServices = [
+        {id: 1, value: "Boosty", description: "Айхо", price: 200, currency: "RUB"}
+    ]
     return(
         <div>
             <header>
@@ -21,7 +25,9 @@ const MainPage = () => {
                 </Select>
                 </div>
                 <div className={modules.listServices}>
-
+                    {listServices.map((item)=>(
+                        <div>{item.value}-{item.description}-{item.price}-{item.currency}</div>
+                    ))}
                 </div>
             </main>
             <footer>
