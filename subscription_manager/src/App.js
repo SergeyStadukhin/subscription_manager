@@ -5,7 +5,7 @@ let isLogging = true;
 const App = () => {
   return (
     <div className="App">
-      {isLogging 
+      {!isLogging 
       ?<LoginPage />
       :<MainPage />}
       
