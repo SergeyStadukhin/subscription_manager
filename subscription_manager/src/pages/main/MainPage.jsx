@@ -11,6 +11,14 @@ const MainPage = () => {
     const listServices = [
         {id: 1, value: "Boosty", description: "Айхо", price: 200, currency: "RUB"}
     ]
+
+    const listCurrency = [
+        {id:1, value:"RUB"},
+        {id:1, value:"RUB"},
+        {id:1, value:"RUB"},
+        {id:1, value:"RUB"},
+        {id:1, value:"RUB"},
+    ]
     return(
         <div>
             <header>
@@ -20,7 +28,8 @@ const MainPage = () => {
             </header>
             <main>
                 <div className={modules.addService}>
-                <Select options={optionsList} 
+                <Select options={optionsList}
+                        className={modules.serviceName}
                         placeholder="Наименование сервиса">
                 </Select>
                 </div>
