@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import modules from '../../style/main.module.scss'
 import Select from 'react-select'
 
@@ -13,11 +13,11 @@ const MainPage = () => {
     ]
 
     const listCurrency = [
-        {id:1, value:"RUB"},
-        {id:1, value:"RUB"},
-        {id:1, value:"RUB"},
-        {id:1, value:"RUB"},
-        {id:1, value:"RUB"},
+        {value:1, label:"RUB"},
+        {value:2, label:"EUR"},
+        {value:3, label:"USD"},
+        {value:4, label:"RUB"},
+        {value:5, label:"RUB"},
     ]
     return(
         <div>
@@ -31,6 +31,10 @@ const MainPage = () => {
                 <Select options={optionsList}
                         className={modules.serviceName}
                         placeholder="Наименование сервиса">
+                </Select>
+                <Select options={listCurrency}
+                        className={modules.serviceName}
+                        placeholder="Валюта подписки">
                 </Select>
                 </div>
                 <div className={modules.listServices}>
